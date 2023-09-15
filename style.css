@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+
+.jumbotron {
+    background-color: gray;
+    height: 150px;
+    text-align: center;
+    line-height: 50px;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+nav > ul {
+    background-color: darkgrey;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+main {
+    margin: 10px 0;
+    height: 700px;
+    overflow: auto;
+}
+
+main > .content {
+    width: 75%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+    padding: 10px;
+    overflow: auto;
+}
+
+main > aside.sidebar1 {
+    width: 25%;
+    height: 50%;
+    padding-left: 10px;
+    float: right;
+    background-color: darkgrey;
+    box-sizing: border-box;
+}
+
+main > aside.sidebar2 {
+    width: 25%;
+    height: 50%;
+    padding-left: 10px;
+    float: right;
+    background-color: darkgrey;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    border: none;
+    box-sizing: border-box;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 4px 4px 2px grey;
+    object-fit: fill;
+    border: none;
+}
+
+footer {
+    background-color: gray;
+    height: 60px;
+}
