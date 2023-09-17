@@ -5,31 +5,48 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.jumbotron {
+body {
+    padding: 20px;
     background-color: gray;
+}
+
+.jumbotron {
+    background-image: url(./img/background.jpg);
+    background-position: center;
     height: 150px;
     text-align: center;
     line-height: 50px;
     padding: 10px 0;
     box-sizing: border-box;
+    color: rgb(238, 237, 237);
+}
+
+.jumbotron p {
+    font-weight: 600;
 }
 
 ul {
     background-color: rgb(63, 63, 63);
     display: flex;
-    /* padding: 20px 5px; */
-    /* gap: 5px; */
 }
 
 ul > li {
     display: inline-block;
-    color: black;
-    /* border-radius: 5px; */
     text-align: center;
     line-height: 50px;
-    width: 80px;
+    width: fit-content;
+    padding: 5px 10px;
     height: 50px;
+}
+
+ul > li[active] {
     background-color: orange;
+    font-weight: bold;
+}
+
+ul > li:hover {
+    background-color: orange;
+    box-shadow: -1px 1px 2px white;
 }
 
 ul a {
@@ -39,11 +56,12 @@ ul a {
 }
 
 main {
-    margin: 10px 0;
+    padding: 10px 0;
     height: fit-content;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 5px;
 }
 
 main > .content {
@@ -51,9 +69,18 @@ main > .content {
     height: 100%;
 }
 
+h2 {/* margin: 10px 0; */
+    text-align: center;
+    padding: 10px 0;
+}
+
 #recomendation {
     width: 100%;
-    margin: 5px 0;
+    margin-bottom: 5px;
+    background-color: rgb(234, 234, 234);
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 #recomendation > .container {
@@ -85,13 +112,11 @@ main > .content {
 }
 
 #books {
-    background-color: darkgrey;
+    background-color: rgb(234, 234, 234);
     height: 100%;
-    overflow: auto;
-}
-
-#books > h2 {
     padding: 10px;
+    border-radius: 10px;
+    overflow: auto;
 }
 
 .search {
@@ -121,13 +146,14 @@ main > aside {
     width: 25%;
     height: 100%;
     box-sizing: border-box;
+    border-radius: 3px;
+    background-color: rgb(234, 234, 234);
 }
 
 aside > div.sidebar1 {
     width: 100%;
-    height: 50%;
-    padding-left: 10px;
-    background-color: darkgrey;
+    /* height: 50%; */
+    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -161,7 +187,39 @@ article:hover {
     border: none;
 }
 
+#newsletter {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 5px;
+    background-color: rgb(234, 234, 234);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+form {
+    width: 50%;
+    margin: 10px auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 5px;
+}
+
+input {
+    width: 200px;
+    height: 10px;
+    /* margin: 10px; */
+    padding: 10px;
+    border-radius: 5px;
+}
+
 footer {
-    background-color: gray;
+    background-color: rgb(63, 63, 63);
+    color: whitesmoke;
     height: 60px;
 }
