@@ -18,14 +18,14 @@
         <ul>
           <li active><a href="#recomendation">Rekomendasi</a></li>
           <li><a href="#books">Semua Buku</a></li>
-          <li><a href="">Newsletter</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <div class="content">
-        <section id="recomendation">
+        <section id="recomendation" class="card">
           <h2>Rekomendasi</h2>
           <p>Buku-buku yang cocok buat nemenin kamu!</p>
           <div class="container">
@@ -74,16 +74,19 @@
           </div>
         </section>
 
-        <section id="books">
+        <section id="books" class="card">
           <h2>Semua Buku</h2>
           <p>Cari buku favoritmu disini!</p>
-          <input
-            class="search"
-            type="search"
-            name="cari"
-            placeholder="Cari disini..."
-          />
-          <!-- <button>Cari</button> -->
+          <div class="search-bar">
+            <input
+              class="search"
+              type="search"
+              name="cari"
+              placeholder="Cari disini..."
+              autocomplete="false"
+            />
+            <button class="search-btn">Cari</button>
+          </div>
           <div class="container">
             <article>
               <img class="cover" src="./img/harry_potter_3.jpg" alt="cover" />
@@ -268,7 +271,7 @@
           </div>
         </section>
 
-        <section id="newsletter">
+        <section id="newsletter" class="card">
           <h2>Jadilah yang Pertama</h2>
           <p>
             Ikuti dan dapatkan informasi terbaru tentang buku, majalah, dan
@@ -281,26 +284,26 @@
         </section>
       </div>
 
-      <aside>
+      <aside class="card">
         <div class="sidebar1">
           <h2>Creator</h2>
           <figure>
-            <img class="profile" src="./img/profile.jpg" alt="photo profile">
+            <img class="profile" src="./img/profile.jpg" alt="photo profile" />
             <figcaption>M. Afif Muzaki</figcaption>
           </figure>
           <p class="bio"><strong>Alamat</strong> Ponorogo, Jawa Timur</p>
           <p class="bio"><strong>Email :</strong> afifmuzaki46@gmail.com</p>
-          <p class="bio"><strong>GitHub :</strong> afifMuzaki</p>
+          <p class="bio"><strong>GitHub :</strong> github.com/afifMuzaki</p>
           <p class="bio">
-            Hai saya adalah seorang freshgrade dan penggiat dibidang teknologi, khususnya dibidang pengembangan web.
+            Hai saya adalah seorang freshgrade dan penggiat dibidang teknologi,
+            khususnya dibidang pengembangan web.
           </p>
         </div>
-        <!-- <div class="sidebar2">Sidebar 2</div> -->
       </aside>
     </main>
 
     <footer>
-      <p>Libofly perpustakaan digital &copy; AfifMuzaki</p>
+      <p>Libofly perpustakaan digital &copy; 2023, AfifMuzaki</p>
     </footer>
   </body>
 </html>
