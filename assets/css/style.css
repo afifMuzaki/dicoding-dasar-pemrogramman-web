@@ -16,7 +16,7 @@ header {
 }
 
 .jumbotron {
-    background-image: url(./img/background.jpg);
+    background-image: url(../img/background.jpg);
     background-position: center;
     height: 150px;
     text-align: center;

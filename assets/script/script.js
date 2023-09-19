@@ -69,7 +69,7 @@ function setCard(book) {
     const card = document.createElement('article');
     card.setAttribute('id', book.id)
 
-    const cardContent = `<img class="cover" src="./img/${book.cover}" alt="${book.judul}" />
+    const cardContent = `<img class="cover" src="./assets/img/${book.cover}" alt="${book.judul}" />
             <div class="card-body">
                 <h4 class="card-title">
                     ${book.judul}
@@ -90,7 +90,7 @@ function setRecomCard(book) {
 
     const cardContent = `<img
                             class="cover-rec"
-                            src="./img/${book.cover}"
+                            src="./assets/img/${book.cover}"
                             alt="${book.judul}"
                         />`;
 
@@ -121,8 +121,9 @@ booksContainer.previousElementSibling.lastElementChild.onclick = function() {
 }
 
 nav.onclick = function(e) {
-    document.querySelectorAll('li[active]')
-    .forEach(li => li.removeAttribute('active'));
-
-    e.target.parentElement.setAttribute('active','');
+    if(e.srcElement.localName === 'a') {
+        document.querySelectorAll('li[active]')
+        .forEach(li => li.removeAttribute('active'));
+        e.target.parentElement.setAttribute('active','');
+    }
 }
