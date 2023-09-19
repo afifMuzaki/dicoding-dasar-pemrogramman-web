@@ -124,5 +124,5 @@ nav.onclick = function(e) {
     document.querySelectorAll('li[active]')
     .forEach(li => li.removeAttribute('active'));
 
-    e.target.setAttribute('active','');
+    e.target.parentElement.setAttribute('active','');
 }
